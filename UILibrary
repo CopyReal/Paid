@@ -1,11 +1,4 @@
 local library = {}
-    getgenv().UiSettings = {
-        name = "     <font color='#00ffff'>NEX</font> <font color='#ffffff'>HUB</font>",
-        key = Enum.KeyCode.RightControl,
-        icon = "4957326534",
-        SchemeColor = Color3.fromRGB(0,255,255), --[[original clr 68,187,165]]
-        filename = "test.json"
-}
 local Config = {}
 local httpService = game:GetService("HttpService")
 
