@@ -1,9 +1,8 @@
 local library = {}
-local Config = {}
 local httpService = game:GetService("HttpService")
 
 pcall(function()
-    Config = httpService:JSONDecode(readfile(UiSettings.filename))
+    Config = httpService:JSONDecode(readfile(getgenv().UiSettings.filename))
 end)
 
 local function saveConfig()
