@@ -2522,39 +2522,4 @@ TextLabel.ZIndex = 10
     end
     return tabs
 end
-
-
-
-local Window = library:create()
-local Tab = Window:Menu("Tab",1)
-local Page = Tab:Page()
-
-Page:Button('Button',function()
-    print('Clicked!')
-end)
-Page:Toggle("Toggle","assda",true,"toggle",Config.toggle,false,function(a)
-print(a)
-end)
-Page:TextBox("TextBox",false,true,"TextBox",Config.TextBox,function(a)
-print(a)
-end)
-Page:Slider("Slider", 0, 100,true,"Slider", Config.Slider, function(a)
-print(a)
-end)
-local ll = Page:Dropdown('Dropdown',{'a','b','c'},true,"Dropdown",Config.Dropdown,function(a)
-print(a)
-end)
-local dropdown = Page:MultiDropdown('Multiple Dropdown', {'a',"b",'c'},true,"MultipleDropdown",Config.MultipleDropdown,function(a)
-print(qa)
-end)
-
-
-local gridpage = Window:Menu("GridPage",2)
---gridpage:Image3d("Image",workspace.HumanoidModel)
---[[gridpage:Toggle3d("title",workspace.HumanoidModel,true,"Toggle3d",Config.Toggle3d,false,function(a)
-print(a)
-end)]]
-gridpage:Image("Iamge",'1234567')
-gridpage:GridToggle('title','1234567',true,"GridToggle",Config.Toggle3d,false,function(a)
-print(a)
-end)
+return library
