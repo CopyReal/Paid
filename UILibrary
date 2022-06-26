@@ -7,7 +7,7 @@ pcall(function()
 end)
 
 local function saveConfig()
-    writefile(UiSettings.filename, httpService:JSONEncode(Config))
+    writefile(getgenv().UiSettings.filename, httpService:JSONEncode(Config))
 end
 
 local UserInputService = game:GetService("UserInputService")
