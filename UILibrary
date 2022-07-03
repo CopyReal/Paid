@@ -1054,8 +1054,6 @@ TextLabel.ZIndex = 10
                 function labl:Update(text)
                     TextLabel.Text = text
                 end
-                return labl
-
             end
             function items:Button(Title, callback)
                 local btnfunc = {}
